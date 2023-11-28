@@ -32,13 +32,20 @@ Additional genomics tools:
 Note: while the paths to R and picard can be specified, the scripts expect BWA, python, samtools, vcftools, and gatk to be in your $PATH.
 
 
+### Installation
+You can either pull this github repo, or download the WGSTools.tar object and unpack it locally:
+`tar -xf WGSToolkit.tar -C ~/path/to/output/folder`
+All below scripts are found in ~WGSToolkit/bin. The location of the WGSToolkit folder on your system is a required input for most functionalities. 
+
+WGSToolkit comes without pre-loaded genomes; you will have to use the Genome_Setup.sh function below, which takes a fasta and gtf from ensembl as its inputs: http://ftp.ensembl.org/pub/. This only needs to be done once, but it takes some time. 
+
 
 ### Set-up scripts
 | Script | Description | Output |
 |-------|--------|----------|
 | Align.sh | Align is a wrapper script for BWA. It takes a set of FASTQs and aligns them to a reference genome with BWA. Resulting bams are sorted, indexed, and marked for PCR duplicates. | Sorted and duplicate marked bam files.|
 | HardCall.sh | HardCall takes the Align output and runs GATK's haplotypecaller. Variants are hard filtered for quality. | SNP and indel VCFs for all variants and biallelic variants only. If all samples are diploid, Genotype and Genotype_Freq text files will be produced as well. If a mix of ploidies or non-diploid samples are input, Genotype_Freq (but not Genotype) text files will be produced. These files are used for downstream analyses.|
-| WGStools_Genome_Setup.sh | Adds a new genome to the WGSToolkit genome presets using a .gtf and a .fa file from ensembl. In addition to making a BWA index, this script will also pull out genomic features and CDS regions, and make additional supporting files for downstream analysis. This step needs only to be run once per genome. | Adds a genome to the preset genomes in WGSToolkit.|
+| Genome_Setup.sh | Adds a new genome to the WGSToolkit genome presets using a .gtf and a .fa file from ensembl. In addition to making a BWA index, this script will also pull out genomic features and CDS regions, and make additional supporting files for downstream analysis. This step needs only to be run once per genome. | Adds a genome to the preset genomes in WGSToolkit.|
 
 
 ### Analysis scripts 
