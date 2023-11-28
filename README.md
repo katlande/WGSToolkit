@@ -47,6 +47,10 @@ WGSToolkit comes without pre-loaded genomes; you will have to use the Genome_Set
 | HardCall.sh | HardCall takes the Align output and runs GATK's haplotypecaller. Variants are hard filtered for quality. | SNP and indel VCFs for all variants and biallelic variants only. If all samples are diploid, Genotype and Genotype_Freq text files will be produced as well. If a mix of ploidies or non-diploid samples are input, Genotype_Freq (but not Genotype) text files will be produced. These files are used for downstream analyses.|
 | Genome_Setup.sh | Adds a new genome to the WGSToolkit genome presets using a .gtf and a .fa file from ensembl. In addition to making a BWA index, this script will also pull out genomic features and CDS regions, and make additional supporting files for downstream analysis. This step needs only to be run once per genome. | Adds a genome to the preset genomes in WGSToolkit.|
 
+![Set-up pipeline](https://github.com/katlande/WGSToolkit/blob/main/WGSToolkit_Setup.png?raw=true)
+
+
+
 
 ### Analysis scripts 
 | Script | Description | Output |
