@@ -5,7 +5,7 @@ WGSToolkit is a set of command line wrapper scripts and original tools for short
 Most functionalities of this toolkit work for non-diploid samples.
 
 ### Dependencies
-R-4.0.0≥, with the following packages:
+≥R-4.0.0, with the following packages:
 - tidyr
 - dplyr
 - reshape2
