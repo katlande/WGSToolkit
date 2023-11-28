@@ -19,11 +19,12 @@ Python 3, with the following packages:
 - vcf
 - SeqIO (Bio)
 
-BWA
-Picard
-samtools
-gatk
-vcftools
+Additional genomics tools:
+- BWA
+- Picard
+- samtools
+- gatk
+- vcftools
 
 Note: while the paths to R and picard can be specified, the scripts expect BWA, python, samtools, vcftools, and gatk to be in your $PATH.
 
