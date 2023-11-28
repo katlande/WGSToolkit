@@ -64,5 +64,6 @@ WGSToolkit comes without pre-loaded genomes; you will have to use the Genome_Set
 | ExtractPCVariants.sh | Preps differential variants file for Call_Codons.sh automatically by combining the Differential freq and Find_Locus_Feature outputs. | tab-delimited txt file|
 | Call_Codons.sh | Identifies protein coding changes introduced by variants. For SNPs, identifies type (missense, stop, silent, nonstop); for indels, identifies whether or not a frameshift is introduced. Optimized to take a Differential_Freqs.sh output file, but can take any text file as long as the requisite columns are present. | tab-delimited txt file |
 
+![analysis tool pipelines](https://github.com/katlande/WGSToolkit/blob/main/WGSToolkit_Analysis_Tools.png?raw=true)
 
 
