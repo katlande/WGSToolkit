@@ -4,6 +4,9 @@ WGSToolkit is a set of command line wrapper scripts and original tools for short
 
 Most functionalities of this toolkit work for non-diploid samples.
 
+WGSToolkit was designed for a specific server. I have updated the code so it should work on any file system, though I have not tested this version rigorously. If you run into file system issues, please contact me at: kathryn.lande@mail.mcgill.ca
+
+
 ### Dependencies
 ≥R-4.0.0, with the following packages:
 - tidyr
