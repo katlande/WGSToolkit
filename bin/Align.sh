@@ -147,7 +147,7 @@ done
 
 rm -r ./MarkDup/tmp
 
-for file in ./MarkDup/*bam
+for file in ./MarkDup/*_MarkDupRG.bam
 do
 	echo "Indexing "$file
 	samtools index $file -@ 32
